@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* Header */
+.navbar {
+  background-color: rgba(240, 255, 240, 1);
+}
+
+.menu-font {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+
+button.header-btn {
+  padding: 12px 28px;
+  border-radius: 33px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/* Responsive */
+button.header-btn2 {
+  padding: 10px 25px;
+  border-radius: 33px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+
+/* Hero */
+
+.hero-section {
+  background-color: rgba(240, 255, 240, 1);
+}
+
+.hero-subtitle {
+  color: rgba(253, 81, 26, 1);
+  font-weight: 400;
+}
+
+.hero-span-1 {
+  color: #000;
+}
+
+.hero-span-2 {
+  color: #000;
+}
+
+.hero-span-3 {
+  color: rgba(33, 181, 115, 1);
+}
+
+.hero-text {
+  color: #000;
+  font-weight: 400;
+}
+
+
+/* Stats Section */
+
+.stats-section {
+  background-color: #f5fff5;
+}
+
+/* Card Style */
+.stats-card {
+  background: rgba(248, 255, 251, 1);
+  border-radius: 12px;
+  padding: 25px;
+  height: 100%;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.stats-section h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: rgba(65, 57, 96, 1);
+}
+
+.stats-section p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: rgba(88, 88, 89, 1);
+}
+
+
+/* Courses Section */
+
+.card-img-top {
+  height: 230px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.course-icon {
+  height: 18px;
+  width: auto;
+}
+
+.courses-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: rgba(65, 57, 96, 1);
+}
+
+.course-title {
+  font-family: "Poppins", sans-serif;
+  color: rgba(65, 57, 96, 1);
+  font-weight: 500;
+}
+
+.course-subtitle {
+  font-family: "Poppins", sans-serif;
+  color: rgba(88, 88, 89, 1);
+  font-weight: 400;
+}
+
+.course-info-text {
+  font-family: "Poppins", sans-serif;
+  color: rgba(88, 88, 89, 1);
+  font-weight: 400;
+}
+
+
+/* Footer */
+
+.footer {
+  color: white;
+  background-color: rgba(40, 37, 49, 1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
