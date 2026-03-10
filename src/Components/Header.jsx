@@ -1,55 +1,57 @@
-import React from 'react'
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
-      
-<nav className="navbar navbar-expand-md px-4">
-    <div className="container-fluid">
-
-        <a className="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-md px-4">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
             <img src="/E-school logo.png" alt="logo" height="40" />
-        </a>
+          </a>
 
-        {/* Toggler button (mobile pe show hoga) */}
-        <button
+          {/* Toggler button (mobile pe show hoga) */}
+          <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
-        >
+          >
             <span className="navbar-toggler-icon"></span>
-        </button>
+          </button>
 
-        {/* Ye collapse system hai */}
-        <div className="collapse navbar-collapse" id="navbarNav">
-
+          {/* Ye collapse system hai */}
+          <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto me-4 gap-md-4">
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Home</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Courses</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Others</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Blog</a>
-                </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Courses
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Others
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Blog
+                </a>
+              </li>
             </ul>
 
-            <button className="btn btn-success">
-                Sign in
-            </button>
-
+            <Link to="/login" className="btn btn-success">
+              Sign in
+            </Link>
+          </div>
         </div>
+      </nav>
     </div>
-</nav>
-    </div>
-  )
-}
+  );
+};
 
-export default Header
-
-
+export default Header;
