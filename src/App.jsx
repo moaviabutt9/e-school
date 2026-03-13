@@ -7,6 +7,8 @@ import Courses from "./Components/Courses";
 import Testimonial from "./Components/Testimonial";
 import Footer from "./Components/Footer";
 import Login from "./Components/Login";
+import Signup from "./Components/Signup";
+
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -27,6 +29,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup/>} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/others" element={<h1>Others Page</h1>} />
+        <Route path="/blog" element={<h1>Blog Page</h1>} />
       </Routes>
     </Router>
   );

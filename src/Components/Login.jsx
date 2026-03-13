@@ -50,6 +50,15 @@ const Login = () => {
                     Sign In
                   </button>
                 </div>
+                <p className="text-center mt-3">
+                  Don't have an account?
+                  <span
+                    style={{ color: "green", cursor: "pointer" }}
+                    onClick={() => navigate('/Signup')}
+                  >
+                    Sign up
+                  </span>
+                </p>
               </form>
             </div>
           </div>
