@@ -1,13 +1,22 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const isAuth = localStorage.getItem('email') && localStorage.getItem('password');
+
+  const handleLogout = () => {
+    localStorage.removeItem('email');
+    localStorage.removeItem('password');
+    navigate('/login')
+  };
+
   return (
     <div>
       <nav className="navbar navbar-expand-md px-4">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" href="#">
             <img src="/E-school logo.png" alt="logo" height="40" />
-          </a>
+          </Link>
 
           {/* Toggler button (mobile pe show hoga) */}
           <button
@@ -44,9 +53,26 @@ const Header = () => {
               </li>
             </ul>
 
-            <Link to="/login" className="btn btn-success">
-              Sign in
-            </Link>
+            {/* Ride side buttons */}
+            {!isAuth ? (
+              <Link to="/login" className="btn btn-success">
+                Login
+              </Link>
+            ) : (
+              <>
+                <Link to="/dashboard" className="btn btn-primary">
+                  Dashboard
+                </Link>
+                 <Link to="/profile" className="btn btn-primary ms-2">
+                  Profile
+                </Link>
+                <button className="btn btn-danger ms-2 mt-2 mt-md-0" onClick={handleLogout}>
+                  Logout
+                </button>
+              </>
+            )
+            }
+
           </div>
         </div>
       </nav>
@@ -55,3 +81,6 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
